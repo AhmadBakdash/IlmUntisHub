@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/birneonline/public_html/ilmuntis
+    - /bin/cp -R . $DEPLOYPATH
