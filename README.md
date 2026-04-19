@@ -1,27 +1,113 @@
-# Laravel + React Starter Kit
+# IlmuntisHub
 
-## Introduction
+A modern web application built with Laravel 13 and React.
 
-Our React starter kit provides a robust, modern starting point for building Laravel applications with a React frontend using [Inertia](https://inertiajs.com).
+## Requirements
 
-Inertia allows you to build modern, single-page React applications using classic server-side routing and controllers. This lets you enjoy the frontend power of React combined with the incredible backend productivity of Laravel and lightning-fast Vite compilation.
+- PHP 8.3+
+- Composer
+- Node.js 20+
+- MySQL or PostgreSQL
 
-This React starter kit utilizes React 19, TypeScript, Tailwind, and the [shadcn/ui](https://ui.shadcn.com) and [radix-ui](https://www.radix-ui.com) component libraries.
+## Installation
 
-## Official Documentation
+### 1. Clone the Repository
 
-Documentation for all Laravel starter kits can be found on the [Laravel website](https://laravel.com/docs/starter-kits).
+```bash
+git clone https://github.com/your-username/ilmuntishub.git
+cd ilmuntis
+```
+
+### 2. Install Dependencies
+
+```bash
+composer install
+npm install
+```
+
+### 3. Environment Setup
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Edit `.env` with your database credentials:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=ilmuntishub
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 4. Database Setup
+
+```bash
+php artisan migrate
+```
+
+Optionally seed with sample data:
+
+```bash
+php artisan db:seed
+```
+
+### 5. Build Frontend
+
+```bash
+npm run build
+```
+
+### 6. Start the App
+
+```bash
+php artisan serve
+```
+
+Visit `http://localhost:8000` in your browser.
+
+---
+
+## Development
+
+Run the frontend in watch mode during development:
+
+```bash
+npm run dev
+```
+
+Run tests:
+
+```bash
+php artisan test
+```
+
+---
+
+## Tech Stack
+
+- **Backend** — Laravel 13
+- **Frontend** — React 19, TypeScript
+- **Styling** — Tailwind CSS 4
+- **Components** — shadcn/ui
+- **Routing** — Inertia.js 2
+- **Auth** — Laravel Fortify (login, register, 2FA, password reset)
+
+---
 
 ## Contributing
 
-Thank you for considering contributing to our starter kit! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -m 'feat: add my feature'`)
+4. Push to the branch (`git push origin feature/my-feature`)
+5. Open a Pull Request
 
-All contributions to the Starter Kits from now on should be made through [Maestro](https://github.com/laravel/maestro).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
 ## License
 
-The Laravel + React starter kit is open-sourced software licensed under the MIT license.
+MIT License — see [LICENSE](LICENSE) for details.
