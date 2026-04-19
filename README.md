@@ -1,4 +1,4 @@
-# IlmuntisHub
+# IlmUntisHub
 
 A modern web application built with Laravel 13 and React.
 
@@ -14,8 +14,8 @@ A modern web application built with Laravel 13 and React.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ilmuntishub.git
-cd ilmuntis
+git clone https://github.com/AhmadBakdash/IlmUntisHub.git
+cd IlmUntisHub
 ```
 
 ### 2. Install Dependencies
