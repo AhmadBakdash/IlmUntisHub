@@ -20,6 +20,8 @@ export default defineConfig({
         tailwindcss(),
         wayfinder({
             formVariants: true,
+            command:
+                '/opt/cpanel/ea-php83/root/usr/bin/php artisan wayfinder:generate',
         }),
     ],
 });
